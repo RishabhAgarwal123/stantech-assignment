@@ -1,14 +1,18 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import { ThemeProvider } from './context/themeContext';
+import { SearchProvider } from './context/weatherContext';
+import Search from './components/Search';
+import Location from './components/Location';
+import Weather from './components/Weather';
 
 function App() {
   return (
-    <div className="app">
-      <ThemeProvider>
-        <Navbar />
-      </ThemeProvider>
-    </div>
+    <SearchProvider>
+      <Search />
+      <div className="details">
+        <Location />
+        <Weather />
+      </div>
+    </SearchProvider>
   );
 }
 

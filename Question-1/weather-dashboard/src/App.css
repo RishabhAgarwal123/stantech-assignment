@@ -1,60 +1,218 @@
-[data-theme="light"] {
-  --bg-color: #ffffff;
-  --text-color: #333333;
-  --heading-color: #444444;
+:root {
+  --border-width: 1px solid #373636; 
+  --drop-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-[data-theme="dark"] {
-  --bg-color: #333333;
-  --text-color: #ffffff;
-  --heading-color: #dddddd;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background: linear-gradient(to right, #444444, #373636);
   font-family: Arial, sans-serif;
-  margin: 0;
   padding: 20px 30px;
+  color: #ffffff;
 }
 
-/* Toggle  */
-.switch label {
-  display: inline-block;
-  width: 40px;
-  height: 20px;
+.search-container {
   position: relative;
-  margin-left: 10px;
 }
 
-.switch .slider {
+.input-field {
+  border: var(--border-width);
+  padding: 20px 70px 20px 20px; /* Adjust padding to accommodate the icon */
+  border-radius: 50px;
+  width: 100%;
+  background-color: #444444;
+  color: #ffffff; /* Text color */
+  font-size: 16px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  outline: none; /* Remove default outline */
+  box-shadow: var(--drop-shadow) /* Add box shadow */
+}
+
+.search-icon {
+  height: 30px;
+  width: 30px;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px; /* Adjust position of the icon */
+  color: #ffffff;
+  z-index: 1; /* Ensure icon appears above input field */
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 20px;
 }
 
-.switch input:checked + .slider {
-  background-color: #2196f3;
+/* Placeholder text style */
+.input-field::placeholder {
+  color: #aaaaaa; /* Adjust placeholder text color */
 }
 
-.switch .slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 2px;
-  bottom: 2px;
-  background-color: white;
-  transition: 0.4s;
+.card-container {
+  margin: 30px 20px;
+  padding-top: 20px;
+  height: 250px;
+  max-width: 100%;
+  border: var(--border-width);
+  box-shadow: var(--drop-shadow);
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.location-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-details p {
+  font-size: 30px;
+}
+
+.date-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.date-time p:first-child {
+  font-size: 80px;
+}
+
+.date-time p:last-child {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.weather-details {
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.temperature {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.air-quality {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.humidity-pressure {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+.weather-icon {
+  height: 100px;
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+
+  .details {
+    display: flex;
+  }
+
+  .card-container {
+    height: auto;
+    flex: 0 0 30% ;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .weather-details {
+    flex: 0 0 65%;
+  }
+
+  .temperature {
+    flex-direction: column;
+  }
+
+  .current-temperature {
+    font-size: 30px;
+    margin: 20px 30px;
+  }
+
+  .sunrise {
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .weather-type {
+    flex-direction: column;
+  }
+
+  .humidity-pressure {
+    gap: 20px;
+  }
+
+  .air-quality {
+    gap: 100px;
+  }
+}
+
+/* Shimmer */
+.shimmer {
+  animation: shimmer 1.5s infinite;
+  background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 20%, #f0f0f0 40%, #f0f0f0 100%);
+  background-size: 200% 100%;
+  border-radius: 4px;
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  width: 100%;
+}
+
+@keyframes shimmer {
+  0% {
+      background-position: -200% 0;
+  }
+  100% {
+      background-position: 200% 0;
+  }
+}
+
+.shimmer.h1 {
+  height: 2em;
+  width: 50%;
+}
+
+.shimmer.p {
+  height: 1em;
+  width: 70%;
+  margin: 0.5em 0;
+}
+
+.shimmer.icon {
+  height: 2em;
+  width: 2em;
   border-radius: 50%;
-}
-
-.switch input:checked + .slider:before {
-  transform: translateX(20px);
+  margin-right: 1em;
 }
