@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,14 @@
     <link rel="stylesheet" href="./style.css">
     <title>Tech Start Up</title>
 </head>
+
 <body>
-    <header class="header">
-        <a href="#" class="logo">
-            <i class="fas fa-magic"> Magic Codes</i>
+    <header class="header" role="banner">
+        <a href="#" class="logo" aria-label="Magic Codes Home">
+            <i class="fas fa-magic"></i> Magic Codes
         </a>
-        <div class="fas fa-bars"></div>
-        <nav class="navbar">
+        <button class="fas fa-bars" aria-label="Toggle navigation" aria-expanded="false"></button>
+        <nav class="navbar" role="navigation">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -25,28 +27,31 @@
     </header>
 
     <section class="home" id="home">
-        <h1 class="banner">Web Development & Maintanence Services</h1>
-        <h3 class="slogan">provide your idea. we have a team to get you there</h3>
-        <a href="#">
+        <h1 class="banner">Web Development & Maintenance Services</h1>
+        <h3 class="slogan">Provide your idea. We have a team to get you there.</h3>
+        <a href="#contact">
             <button>Get Started</button>
         </a>
-
-        <div class="fas fa-cog nut1"></div>
-        <div class="fas fa-cog nut2"></div>
+        <div class="fas fa-cog nut1" aria-hidden="true"></div>
+        <div class="fas fa-cog nut2" aria-hidden="true"></div>
     </section>
 
     <section class="about" id="about">
         <h1 class="heading">About Us</h1>
         <div class="row">
             <div class="content">
-                <h3>We build wesbsites that grow your business</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quidem impedit fuga voluptate doloremque recusandae assumenda maxime explicabo in sapiente reprehenderit reiciendis sit molestias laboriosam dolor totam, perspiciatis similique laudantium perferendis asperiores incidunt, quas iure, sed corrupti! Aliquid dignissimos debitis repellendus ipsum, alias illo necessitatibus, dolore accusantium, quaerat impedit ea.</p>
+                <h3>We build websites that grow your business</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quidem impedit fuga voluptate
+                    doloremque recusandae assumenda maxime explicabo in sapiente reprehenderit reiciendis sit molestias
+                    laboriosam dolor totam, perspiciatis similique laudantium perferendis asperiores incidunt, quas
+                    iure, sed corrupti! Aliquid dignissimos debitis repellendus ipsum, alias illo necessitatibus, dolore
+                    accusantium, quaerat impedit ea.</p>
                 <a href="#">
                     <button class="btn">Read More</button>
                 </a>
             </div>
             <div class="image">
-                <img src="./images/about.svg" alt="">
+                <img src="./images/about.svg" alt="About Us">
             </div>
         </div>
     </section>
@@ -55,11 +60,18 @@
         <h1 class="heading">Our Services</h1>
         <div class="row">
             <div class="image">
-                <img src="./images/img1.svg" alt="">
+                <img src="./images/img1.svg" alt="Website Development">
             </div>
             <div class="content">
                 <h3>Website Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta saepe consequuntur, ratione at explicabo quisquam quo nobis harum placeat, nisi delectus perspiciatis atque dolores odit repellat odio iste dolore exercitationem, a praesentium non alias? Illum consectetur ullam omnis, enim ipsam delectus excepturi doloribus, cumque praesentium quis, eligendi magni placeat cum dignissimos ducimus dolorem quibusdam. Quam sunt, placeat, quod veritatis, labore maiores repellendus libero ipsam quidem cupiditate velit. Vitae veniam delectus quae beatae culpa aperiam sed fugiat harum architecto distinctio, illum optio voluptate id. Voluptates aut dicta aspernatur iste dolor ipsum quia officia corporis, sed animi illo vero. Voluptatum, sint?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta saepe consequuntur, ratione at
+                    explicabo quisquam quo nobis harum placeat, nisi delectus perspiciatis atque dolores odit repellat
+                    odio iste dolore exercitationem, a praesentium non alias? Illum consectetur ullam omnis, enim ipsam
+                    delectus excepturi doloribus, cumque praesentium quis, eligendi magni placeat cum dignissimos
+                    ducimus dolorem quibusdam. Quam sunt, placeat, quod veritatis, labore maiores repellendus libero
+                    ipsam quidem cupiditate velit. Vitae veniam delectus quae beatae culpa aperiam sed fugiat harum
+                    architecto distinctio, illum optio voluptate id. Voluptates aut dicta aspernatur iste dolor ipsum
+                    quia officia corporis, sed animi illo vero. Voluptatum, sint?</p>
                 <a href="#">
                     <button class="btn">Read More</button>
                 </a>
@@ -69,23 +81,37 @@
         <div class="row">
             <div class="content">
                 <h3>Responsive Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta saepe consequuntur, ratione at explicabo quisquam quo nobis harum placeat, nisi delectus perspiciatis atque dolores odit repellat odio iste dolore exercitationem, a praesentium non alias? Illum consectetur ullam omnis, enim ipsam delectus excepturi doloribus, cumque praesentium quis, eligendi magni placeat cum dignissimos ducimus dolorem quibusdam. Quam sunt, placeat, quod veritatis, labore maiores repellendus libero ipsam quidem cupiditate velit. Vitae veniam delectus quae beatae culpa aperiam sed fugiat harum architecto distinctio, illum optio voluptate id. Voluptates aut dicta aspernatur iste dolor ipsum quia officia corporis, sed animi illo vero. Voluptatum, sint?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta saepe consequuntur, ratione at
+                    explicabo quisquam quo nobis harum placeat, nisi delectus perspiciatis atque dolores odit repellat
+                    odio iste dolore exercitationem, a praesentium non alias? Illum consectetur ullam omnis, enim ipsam
+                    delectus excepturi doloribus, cumque praesentium quis, eligendi magni placeat cum dignissimos
+                    ducimus dolorem quibusdam. Quam sunt, placeat, quod veritatis, labore maiores repellendus libero
+                    ipsam quidem cupiditate velit. Vitae veniam delectus quae beatae culpa aperiam sed fugiat harum
+                    architecto distinctio, illum optio voluptate id. Voluptates aut dicta aspernatur iste dolor ipsum
+                    quia officia corporis, sed animi illo vero. Voluptatum, sint?</p>
                 <a href="#">
                     <button class="btn">Read More</button>
                 </a>
             </div>
             <div class="image">
-                <img src="./images/img3.svg" alt="">
+                <img src="./images/img3.svg" alt="Responsive Design">
             </div>
         </div>
 
         <div class="row">
             <div class="image">
-                <img src="./images/img2.svg" alt="">
+                <img src="./images/img2.svg" alt="Mobile Development">
             </div>
             <div class="content">
                 <h3>Mobile Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta saepe consequuntur, ratione at explicabo quisquam quo nobis harum placeat, nisi delectus perspiciatis atque dolores odit repellat odio iste dolore exercitationem, a praesentium non alias? Illum consectetur ullam omnis, enim ipsam delectus excepturi doloribus, cumque praesentium quis, eligendi magni placeat cum dignissimos ducimus dolorem quibusdam. Quam sunt, placeat, quod veritatis, labore maiores repellendus libero ipsam quidem cupiditate velit. Vitae veniam delectus quae beatae culpa aperiam sed fugiat harum architecto distinctio, illum optio voluptate id. Voluptates aut dicta aspernatur iste dolor ipsum quia officia corporis, sed animi illo vero. Voluptatum, sint?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta saepe consequuntur, ratione at
+                    explicabo quisquam quo nobis harum placeat, nisi delectus perspiciatis atque dolores odit repellat
+                    odio iste dolore exercitationem, a praesentium non alias? Illum consectetur ullam omnis, enim ipsam
+                    delectus excepturi doloribus, cumque praesentium quis, eligendi magni placeat cum dignissimos
+                    ducimus dolorem quibusdam. Quam sunt, placeat, quod veritatis, labore maiores repellendus libero
+                    ipsam quidem cupiditate velit. Vitae veniam delectus quae beatae culpa aperiam sed fugiat harum
+                    architecto distinctio, illum optio voluptate id. Voluptates aut dicta aspernatur iste dolor ipsum
+                    quia officia corporis, sed animi illo vero. Voluptatum, sint?</p>
                 <a href="#">
                     <button class="btn">Read More</button>
                 </a>
@@ -95,23 +121,37 @@
         <div class="row">
             <div class="content">
                 <h3>Web Hosting</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta saepe consequuntur, ratione at explicabo quisquam quo nobis harum placeat, nisi delectus perspiciatis atque dolores odit repellat odio iste dolore exercitationem, a praesentium non alias? Illum consectetur ullam omnis, enim ipsam delectus excepturi doloribus, cumque praesentium quis, eligendi magni placeat cum dignissimos ducimus dolorem quibusdam. Quam sunt, placeat, quod veritatis, labore maiores repellendus libero ipsam quidem cupiditate velit. Vitae veniam delectus quae beatae culpa aperiam sed fugiat harum architecto distinctio, illum optio voluptate id. Voluptates aut dicta aspernatur iste dolor ipsum quia officia corporis, sed animi illo vero. Voluptatum, sint?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta saepe consequuntur, ratione at
+                    explicabo quisquam quo nobis harum placeat, nisi delectus perspiciatis atque dolores odit repellat
+                    odio iste dolore exercitationem, a praesentium non alias? Illum consectetur ullam omnis, enim ipsam
+                    delectus excepturi doloribus, cumque praesentium quis, eligendi magni placeat cum dignissimos
+                    ducimus dolorem quibusdam. Quam sunt, placeat, quod veritatis, labore maiores repellendus libero
+                    ipsam quidem cupiditate velit. Vitae veniam delectus quae beatae culpa aperiam sed fugiat harum
+                    architecto distinctio, illum optio voluptate id. Voluptates aut dicta aspernatur iste dolor ipsum
+                    quia officia corporis, sed animi illo vero. Voluptatum, sint?</p>
                 <a href="#">
                     <button class="btn">Read More</button>
                 </a>
             </div>
             <div class="image">
-                <img src="./images/img5.svg" alt="">
+                <img src="./images/img5.svg" alt="Web Hosting">
             </div>
         </div>
 
         <div class="row">
             <div class="image">
-                <img src="./images/img6.svg" alt="">
+                <img src="./images/img6.svg" alt="UI/UX Design">
             </div>
             <div class="content">
                 <h3>UI/UX Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta saepe consequuntur, ratione at explicabo quisquam quo nobis harum placeat, nisi delectus perspiciatis atque dolores odit repellat odio iste dolore exercitationem, a praesentium non alias? Illum consectetur ullam omnis, enim ipsam delectus excepturi doloribus, cumque praesentium quis, eligendi magni placeat cum dignissimos ducimus dolorem quibusdam. Quam sunt, placeat, quod veritatis, labore maiores repellendus libero ipsam quidem cupiditate velit. Vitae veniam delectus quae beatae culpa aperiam sed fugiat harum architecto distinctio, illum optio voluptate id. Voluptates aut dicta aspernatur iste dolor ipsum quia officia corporis, sed animi illo vero. Voluptatum, sint?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta saepe consequuntur, ratione at
+                    explicabo quisquam quo nobis harum placeat, nisi delectus perspiciatis atque dolores odit repellat
+                    odio iste dolore exercitationem, a praesentium non alias? Illum consectetur ullam omnis, enim ipsam
+                    delectus excepturi doloribus, cumque praesentium quis, eligendi magni placeat cum dignissimos
+                    ducimus dolorem quibusdam. Quam sunt, placeat, quod veritatis, labore maiores repellendus libero
+                    ipsam quidem cupiditate velit. Vitae veniam delectus quae beatae culpa aperiam sed fugiat harum
+                    architecto distinctio, illum optio voluptate id. Voluptates aut dicta aspernatur iste dolor ipsum
+                    quia officia corporis, sed animi illo vero. Voluptatum, sint?</p>
                 <a href="#">
                     <button class="btn">Read More</button>
                 </a>
@@ -121,13 +161,20 @@
         <div class="row">
             <div class="content">
                 <h3>SEO Friendly</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta saepe consequuntur, ratione at explicabo quisquam quo nobis harum placeat, nisi delectus perspiciatis atque dolores odit repellat odio iste dolore exercitationem, a praesentium non alias? Illum consectetur ullam omnis, enim ipsam delectus excepturi doloribus, cumque praesentium quis, eligendi magni placeat cum dignissimos ducimus dolorem quibusdam. Quam sunt, placeat, quod veritatis, labore maiores repellendus libero ipsam quidem cupiditate velit. Vitae veniam delectus quae beatae culpa aperiam sed fugiat harum architecto distinctio, illum optio voluptate id. Voluptates aut dicta aspernatur iste dolor ipsum quia officia corporis, sed animi illo vero. Voluptatum, sint?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta saepe consequuntur, ratione at
+                    explicabo quisquam quo nobis harum placeat, nisi delectus perspiciatis atque dolores odit repellat
+                    odio iste dolore exercitationem, a praesentium non alias? Illum consectetur ullam omnis, enim ipsam
+                    delectus excepturi doloribus, cumque praesentium quis, eligendi magni placeat cum dignissimos
+                    ducimus dolorem quibusdam. Quam sunt, placeat, quod veritatis, labore maiores repellendus libero
+                    ipsam quidem cupiditate velit. Vitae veniam delectus quae beatae culpa aperiam sed fugiat harum
+                    architecto distinctio, illum optio voluptate id. Voluptates aut dicta aspernatur iste dolor ipsum
+                    quia officia corporis, sed animi illo vero. Voluptatum, sint?</p>
                 <a href="#">
                     <button class="btn">Read More</button>
                 </a>
             </div>
             <div class="image">
-                <img src="./images/img4.svg" alt="">
+                <img src="./images/img4.svg" alt="SEO Friendly">
             </div>
         </div>
     </section>
@@ -136,32 +183,34 @@
         <h1 class="heading">Contact Us</h1>
         <div class="row">
             <div class="image">
-                <img src="./images/contact.svg" alt="Contact">
+                <img src="./images/contact.svg" alt="Contact Us">
             </div>
 
             <div class="form-container">
-                <form action="">
+                <form action="" aria-label="Contact form">
                     <div class="input-box">
-                        <input type="text" placeholder="Firstname...">
-                        <input type="text" placeholder="Lastname...">
+                        <input type="text" placeholder="Firstname..." aria-label="First name">
+                        <input type="text" placeholder="Lastname..." aria-label="Last name">
                     </div>
-                    <input type="email" placeholder="Enter your email...">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Type your message..."></textarea>
+                    <input type="email" placeholder="Enter your email..." aria-label="Email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Type your message..."
+                        aria-label="Message"></textarea>
                     <input type="submit" value="Send">
                 </form>
             </div>
         </div>
     </section>
-    
-    <section class="footer">
+
+    <section class="footer" role="contentinfo">
         <h1>Created by Rishabh Agarwal</h1>
         <div class="icons">
-            <a href="" class="fab fa-github"></a>
-            <a href="" class="fab fa-linkedin"></a>
-            <a href="" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-github" aria-label="GitHub"></a>
+            <a href="#" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+            <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
         </div>
     </section>
 
     <script src="./main.js"></script>
 </body>
+
 </html>

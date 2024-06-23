@@ -32,24 +32,33 @@ const Weather = () => {
                 return <RiCloudyFill className="weather-icon" />;
             case "02n": 
                 return <IoCloudyNightOutline className="weather-icon" />;
-            case "03d" || "03n":
+            case "03d": 
+            case "03n":
                 return <RiCloudy2Fill className="weather-icon" />;
-            case "04d" || "04n":
+            case "04d": 
+            case "04n":
                 return <RiCloudyFill className="weather-icon" />;
-            case "09d" || "09n":
+            case "09d": 
+            case "09n":
                 return <RiShowersFill className="weather-icon" />;
-            case "10d" || "10n":
+            case "10d": 
+            case "10n":
                 return <RiRainyFill className="weather-icon" />;
-            case "11d" || "11n":
+            case "11d": 
+            case "11n":
                 return <RiThunderstormsFill className="weather-icon" />;
-            case "13d" || "13n":
+            case "13d": 
+            case "13n":
                 return <RiSnowyFill className="weather-icon" />;
-            case "50d" || "50n":
+            case "50d": 
+            case "50n":
                 return <RiMistFill className="weather-icon" />;
             default:
                 return null;
         }
     };
+
+    console.log(getWeatherIcon(weatherData?.weather?.[0]?.icon))
 
     if (loading) {
         return <Shimmer />

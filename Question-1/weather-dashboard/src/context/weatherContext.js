@@ -17,12 +17,12 @@ export const SearchProvider = ({ children }) => {
             setLoading(true);
             const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`);
             if (!res.ok) {
-                throw new Error('Network response was not ok');
+                alert(res.statusText);
             }
             const data = await res.json();
             setWeatherData(data);
         } catch (error) {
-            console.log('Something went wrong');
+            alert(error.message);
         } finally {
             setLoading(false);
         }

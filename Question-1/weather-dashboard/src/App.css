@@ -181,11 +181,11 @@ body {
 /* Shimmer */
 .shimmer {
   animation: shimmer 1.5s infinite;
-  background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 20%, #f0f0f0 40%, #f0f0f0 100%);
+  background: linear-gradient(to right, #f0f0f0ed 0%, #d3c3c3 20%, #d3c6c6 40%, #e0cece 100%);
   background-size: 200% 100%;
   border-radius: 4px;
   display: inline-block;
-  height: 1em;
+  height: 2em;
   position: relative;
   width: 100%;
 }
@@ -199,18 +199,19 @@ body {
   }
 }
 
-.shimmer.h1 {
+.shimmer .h1 {
+  border-radius: 5px;
   height: 2em;
-  width: 50%;
+  width: 25%;
 }
 
-.shimmer.p {
+.shimmer .p {
   height: 1em;
   width: 70%;
   margin: 0.5em 0;
 }
 
-.shimmer.icon {
+.shimmer .icon {
   height: 2em;
   width: 2em;
   border-radius: 50%;
